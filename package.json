@@ -20,6 +20,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
+		
 		"@biomejs/biome": "^1.9.4",
 		"npm-run-all2": "^7.0.1"
 	}

@@ -1,6 +1,7 @@
 {
 	"name": "@niren-ai/shared",
 	"module": "src/index.ts",
+	"version": "0.0.1",
 	"type": "module",
 	"devDependencies": {
 		"@types/png-chunk-text": "^1.0.3",
@@ -25,11 +26,11 @@
 		"@langchain/openai": "^0.3.11",
 		"@langchain/textsplitters": "^0.1.0",
 		"@risuai/ccardlib": "^0.4.2",
-
 		"langchain": "^0.3.3",
 		"png-chunk-text": "^1.0.0",
 		"png-chunks-encode": "^1.0.0",
 		"png-chunks-extract": "^1.0.0",
+		"uuid": "^10.0.0",
 		"zod": "^3.23.8"
 	}
 }
