@@ -1,15 +1,18 @@
-# Elysia with Bun runtime
+<div align="center">
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+# NirenAi - 拟人AI
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
+WIP
 
-Open http://localhost:3000/ with your browser to see the result.
+[![](https://dcbadge.limes.pink/api/server/https://discord.gg/6FEwxdW8)](https://discord.gg/6FEwxdW8)
+
+</div>
+
+## Credits
+
+- [ChatLuna](https://github.com/ChatLunaLab/chatluna)
+- [SillyTavern](https://github.com/SillyTavern/SillyTavern)
+- [RisuAI](https://github.com/kwaroran/RisuAI)
+- [Dify](https://github.com/langgenius/dify)
+- [Elysia](https://github.com/elysiajs/elysia)
+- [BunJS](https://github.com/oven-sh/bun)

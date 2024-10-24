@@ -1,0 +1,22 @@
+{
+  "name": "@niren-ai/frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^1.1.3",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@niren-ai/backend": "workspace:*",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.9",
+    "vue-tsc": "^2.1.6"
+  }
+}

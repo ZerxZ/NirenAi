@@ -1,0 +1,36 @@
+{
+	"name": "@niren-ai/backend",
+	"version": "0.0.1",
+  	"workspaces":["apps/*","packages/*"],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "bun run --watch src/index.ts",
+		"format": "biome format .",
+		"lint": "biome lint .",
+		"format-and-lint": "biome check .",
+		"format-and-lint:fix": "biome check . --write",
+		"typecheck": "bun run --filter '*' typecheck"
+	},
+	"dependencies": {
+		"@elysiajs/cors": "^1.1.1",
+		"@elysiajs/server-timing": "^1.1.0",
+		"@elysiajs/stream": "^1.1.0",
+		"@elysiajs/swagger": "^1.1.5",
+		"@elysiajs/trpc": "^1.1.0",
+		"@elysiajs/websocket": "^0.2.8",
+		"@trpc/server": "^10.45.2",
+		"drizzle-orm": "^0.35.3",
+		"drizzle-typebox": "^0.1.1",
+		"elysia": "latest",
+		"logestic": "^1.2.4",
+		"uuid": "^10.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"bun-types": "latest"
+	},
+	"override": {
+		"@sinclair/typebox": "0.33.17"
+	},
+	"module": "src/index.js"
+}

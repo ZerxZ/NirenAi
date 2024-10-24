@@ -1,15 +1,26 @@
 {
-  "name": "NirenAIWeb",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "@niren-ai/monorepo",
+	"private": true,
+	"version": "0.0.1",
+	"license": "MIT",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "run-p -l \"dev:*\"",
+		"dev:server": "cd ./apps/backend && bun run dev",
+		"dev:web": "cd ./apps/frontend && bun run dev",
+		"format": "biome format .",
+		"lint": "biome lint .",
+		"format-and-lint": "biome check .",
+		"format-and-lint:fix": "biome check . --write",
+		"typecheck": "bun run --filter '*' typecheck"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"npm-run-all2": "^7.0.1"
+	}
 }
